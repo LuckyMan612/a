@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         modelContainer.appendChild(renderer.domElement);
 
         var loader = new THREE.GLTFLoader();
-        loader.load("model.glb", function(gltf) {
+        loader.load("ecodan_heat_pump_slim_02.obj", function(gltf) {
             model = gltf.scene;
             scene.add(model);
 
