@@ -123,6 +123,21 @@ footer p {
     margin: 20px;
 }
 
+.image-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-left {
+    margin-right: 20px;
+}
+
+.image-right {
+    margin-left: 20px;
+}
+
 @media (max-width: 768px) {
     header {
         padding: 10px 0;
