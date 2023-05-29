@@ -130,12 +130,10 @@ footer p {
     flex-wrap: wrap;
 }
 
-.image-left {
-    margin-right: 20px;
-}
-
+.image-left,
 .image-right {
-    margin-left: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -185,31 +183,11 @@ footer p {
         margin-bottom: 10px;
         text-align: center;
     }
-}
 
-@media (min-width: 769px) {
-    section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    nav {
-        background-color: #222;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .navigation {
-        justify-content: center;
-    }
-
-    main {
-        padding-top: 100px;
+    .image-left,
+    .image-right {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
     }
 }
