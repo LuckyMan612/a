@@ -11,6 +11,9 @@ header {
     background-color: #222;
     color: #fff;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
@@ -20,8 +23,6 @@ header {
 .navigation {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
 }
 
 .navigation li {
@@ -31,6 +32,7 @@ header {
 .navigation a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
 }
 
 main {
@@ -71,4 +73,44 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 }
