@@ -136,6 +136,13 @@ footer p {
     height: auto;
 }
 
+@media (min-width: 769px) {
+    .image-left,
+    .image-right {
+        max-width: 400px; /* Dostosuj wartość maksymalnej szerokości według potrzeb */
+    }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 10px 0;
