@@ -43,6 +43,13 @@ main {
     padding: 0 20px;
 }
 
+.block {
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
     font-size: 36px;
     font-weight: 700;
@@ -53,11 +60,6 @@ p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-}
-
-.bg-block {
-    background-color: #fff;
-    padding: 60px 0;
 }
 
 .contact-details {
@@ -93,4 +95,3 @@ footer p {
         opacity: 1;
     }
 }
-
