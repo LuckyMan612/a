@@ -1,4 +1,0 @@
-"po", "3", "https://nic.pl"
-"po", "3", "https://nic.pl"
-"po", "3", "https://nic.pl"
-"po", "3", "https://nic.pl"
