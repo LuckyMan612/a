@@ -24,21 +24,24 @@
             <div class="container">
                 <h1>Sklep internetowy</h1>
                 <div class="product-list">
-                    <!-- Produkty generowane dynamicznie z pliku tekstowego -->
-                    <?php
-                        $produkty = file('produkty.txt');
-                        foreach ($produkty as $produkt) {
-                            $produkt = explode(',', $produkt);
-                            $nazwa = trim($produkt[0]);
-                            $cena = trim($produkt[1]);
-                            echo '<div class="product">';
-                            echo '<img src="produkty/' . $nazwa . '.jpg" alt="' . $nazwa . '">';
-                            echo '<h2>' . $nazwa . '</h2>';
-                            echo '<p>Cena: ' . $cena . '</p>';
-                            echo '<button>Dodaj do koszyka</button>';
-                            echo '</div>';
-                        }
-                    ?>
+                    <div class="product">
+                        <img src="produkty/produkt-1.jpg" alt="Produkt 1">
+                        <h2>Produkt 1</h2>
+                        <p>Cena: 2000000 zł</p>
+                        <button>Dodaj do koszyka</button>
+                    </div>
+                    <div class="product">
+                        <img src="produkty/produkt-2.jpg" alt="Produkt 2">
+                        <h2>Produkt 2</h2>
+                        <p>Cena: 20000 zł</p>
+                        <button>Dodaj do koszyka</button>
+                    </div>
+                    <div class="product">
+                        <img src="produkty/produkt-3.jpg" alt="Produkt 3">
+                        <h2>Produkt 3</h2>
+                        <p>Cena: 100 zł</p>
+                        <button>Dodaj do koszyka</button>
+                    </div>
                 </div>
             </div>
         </section>
