@@ -14,12 +14,12 @@ body {
 }
 
 header {
-    background-color: #222;
     color: #fff;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(rgb(184, 191, 191), rgb(184, 191, 191));
 }
 
 .logo {
@@ -37,6 +37,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    background-color: rgb(184, 191, 191); /* Dodana linia - zmiana koloru tła nawigacji */
 }
 
 .navigation li {
@@ -123,26 +124,6 @@ footer p {
     margin: 20px;
 }
 
-.image-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.image-left,
-.image-right {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (min-width: 769px) {
-    .image-left,
-    .image-right {
-        max-width: 400px; /* Dostosuj wartość maksymalnej szerokości według potrzeb */
-    }
-}
-
 @media (max-width: 768px) {
     header {
         padding: 10px 0;
@@ -190,11 +171,31 @@ footer p {
         margin-bottom: 10px;
         text-align: center;
     }
+}
 
-    .image-left,
-    .image-right {
-        margin: 0;
-        max-width: 100%;
-        height: auto;
+@media (min-width: 769px) {
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    nav {
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .navigation {
+        justify-content: center;
+        background-color: rgb(184, 191, 191); /* Dodana linia - zmiana koloru tła nawigacji */
+    }
+
+    main {
+        padding-top: 100px;
     }
 }
