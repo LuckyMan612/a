@@ -199,3 +199,8 @@ footer p {
         padding-top: 100px;
     }
 }
+.image-text-container img {
+    width: 100%;
+    height: auto;
+}
+
