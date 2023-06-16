@@ -202,5 +202,10 @@ footer p {
 .image-text-container img {
     width: 100%;
     height: auto;
+    max-width: 500px; /* Ajust this value according to your needs */
+    margin: auto; /* Centers the image if it is smaller than the container */
+    display: block; /* Needed for auto margins to work */
+    object-fit: cover; /* Helps maintain aspect ratio */
 }
+
 
